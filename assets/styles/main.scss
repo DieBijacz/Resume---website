@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --secondaryLinkColor-dark: rgb(51, 217, 243);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+  --mainGreen: green;
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  line-height: 1.5em;
+  color: var(--mainTextColor-dark);
+}
+
+i {
+  font-family: Arial;
+}
+
+body {
+  font-family: 'Readex Pro';
+  background-color: var(--mainBgColor-dark);
+}
+
+p,
+span,
+li {
+  color: var(--secondaryTextColor-dark);
+}
+
+hr {
+  border: 1px solid var(--mainBorderColor-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainLinkColor-dark);
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+
+  li {
+    line-height: 2.1em;
+  }
+}
+
+img {
+  width: 100%
+}
+
+.section-page {
+  padding: 1em 0;
+}
+
+#container-main {
+  max-width: 700px;
+  margin: 0 auto;
+
+  // WRAPPER HERO
+  #wrapper-hero {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    #name {
+      font-size: 3em;
+      line-height: 1em;
+    }
+
+    #bio {
+      font-weight: 300;
+    }
+
+    #email {
+      color: var(--mainTextColor-dark);
+    }
+
+    img {
+      width: calc(min(200px, 50%));
+      border-radius: 50%;
+    }
+  }
+
+  // SOCIAL
+  #social-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 1em;
+
+    a {
+      transition: 200ms;
+
+      &:hover {
+        transform: translateY(-3px) scale(1.1);
+        color: var(--secondaryLinkColor-dark);
+      }
+    }
+  }
+
+  // SKILLS
+  #skills {
+    span {
+      color: var(--mainGreen);
+      font-size: 1.3rem;
+    }
+  }
+
+  #tech {
+    #icons {
+      display: flex;
+      font-size: 3rem;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+  }
+
+  #jobs {
+    .title {
+      margin-top: 3rem;
+    }
+  }
+}
+
+
+@media (max-width: 768px) {
+  #container-main {
+    #wrapper-hero {
+      flex-direction: column;
+      text-align: center;
+      gap: 0;
+    }
+  }
+}

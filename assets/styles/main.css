@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;500;600;700&display=swap");
+:root {
+  --mainTextColor-dark: #fff;
+  --secondaryTextColor-dark: #adb0b1;
+  --mainLinkColor-dark: rgb(30, 190, 214);
+  --secondaryLinkColor-dark: rgb(51, 217, 243);
+  --mainBorderColor-dark: #2b3031;
+  --mainBgColor-dark: #131415;
+  --mainGreen: green;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.5em;
+  color: var(--mainTextColor-dark);
+}
+
+i {
+  font-family: Arial;
+}
+
+body {
+  font-family: 'Readex Pro';
+  background-color: var(--mainBgColor-dark);
+}
+
+p,
+span,
+li {
+  color: var(--secondaryTextColor-dark);
+}
+
+hr {
+  border: 1px solid var(--mainBorderColor-dark);
+}
+
+a {
+  text-decoration: none;
+  color: var(--mainLinkColor-dark);
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  line-height: 2.1em;
+}
+
+img {
+  width: 100%;
+}
+
+.section-page {
+  padding: 1em 0;
+}
+
+#container-main {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#container-main #wrapper-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2em;
+}
+
+#container-main #wrapper-hero #name {
+  font-size: 3em;
+  line-height: 1em;
+}
+
+#container-main #wrapper-hero #bio {
+  font-weight: 300;
+}
+
+#container-main #wrapper-hero #email {
+  color: var(--mainTextColor-dark);
+}
+
+#container-main #wrapper-hero img {
+  width: calc(min(200px, 50%));
+  border-radius: 50%;
+}
+
+#container-main #social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-column-gap: 1em;
+          column-gap: 1em;
+}
+
+#container-main #social-list a {
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+#container-main #social-list a:hover {
+  -webkit-transform: translateY(-3px) scale(1.1);
+          transform: translateY(-3px) scale(1.1);
+  color: var(--secondaryLinkColor-dark);
+}
+
+#container-main #skills span {
+  color: var(--mainGreen);
+  font-size: 1.3rem;
+}
+
+#container-main #tech #icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 3rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#container-main #jobs .title {
+  margin-top: 3rem;
+}
+
+@media (max-width: 768px) {
+  #container-main #wrapper-hero {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    gap: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
