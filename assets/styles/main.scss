@@ -3,11 +3,12 @@
 :root {
   --mainTextColor-dark: #fff;
   --secondaryTextColor-dark: #adb0b1;
-  --mainLinkColor-dark: rgb(30, 190, 214);
-  --secondaryLinkColor-dark: rgb(51, 217, 243);
+  --accent-color: #FF4C29;
   --mainBorderColor-dark: #2b3031;
   --mainBgColor-dark: #131415;
-  --mainGreen: green;
+  --dark-color: #0D1117;
+  --text-color: #D2D2D2;
+
 }
 
 
@@ -16,7 +17,7 @@
 *::before {
   box-sizing: border-box;
   line-height: 1.5em;
-  color: var(--mainTextColor-dark);
+  color: var(--text-color);
 }
 
 i {
@@ -40,7 +41,7 @@ hr {
 
 a {
   text-decoration: none;
-  color: var(--mainLinkColor-dark);
+  color: var(--accent-color);
   font-weight: 500;
 }
 
@@ -101,7 +102,7 @@ img {
 
       &:hover {
         transform: translateY(-3px) scale(1.1);
-        color: var(--secondaryLinkColor-dark);
+        color: var(--accent-color);
       }
     }
   }
@@ -109,7 +110,7 @@ img {
   // SKILLS
   #skills {
     span {
-      color: var(--mainGreen);
+      color: var(--accent-color);
       font-size: 1.3rem;
     }
   }
